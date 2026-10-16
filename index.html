@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CustomerHub - Gestão Integrada e Cadastro de Clientes">
+    <title>CustomerHub | Cadastro Corporativo</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        
+        <!-- BARRA LATERAL DE NAVEGAÇÃO -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>CustomerHub</h2>
+                <span>Módulo de Clientes</span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <button class="nav-link active" data-view="dashboard">📊 Dashboard</button>
+                <div class="nav-category">Cadastros</div>
+                <button class="nav-link" data-view="clientes">👥 Clientes</button>
+            </nav>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL DA APLICAÇÃO -->
+        <div class="main-content">
+            
+            <!-- Barra Superior -->
+            <header class="top-bar">
+                <div class="page-title">
+                    <h1 id="current-view-title">📊 Dashboard de Clientes</h1>
+                </div>
+                <div class="user-profile">
+                    <span>Olá, <strong>Leonardo Takedi Onuki</strong></span>
+                </div>
+            </header>
+
+            <!-- CONTAINER DINÂMICO (Onde o JavaScript injeta as telas) -->
+            <main id="view-container" class="view-container">
+                <!-- O conteúdo nascerá aqui via main.js -->
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Script Orquestrador Central Garantido na Raiz -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Grid principal sem vazamento de tela */
+.app-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
+/* SIDEBAR TOTALMENTE CLICÁVEL */
+.sidebar {
+    background-color: #0f172a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    z-index: 10; /* Garante que ela fique sempre por cima */
+}
+
+.sidebar-brand {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1e293b;
+}
+
+.sidebar-brand h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #3b82f6;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-brand span {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.nav-category {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 1.25rem 0 0.5rem 0.5rem;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* CONTEÚDO FLUIDO COMPORTADO */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top-bar {
+    background-color: #ffffff;
+    height: 70px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    flex-shrink: 0;
+}
+
+.view-container {
+    padding: 2rem;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f8fafc;
+}
+
+.crud-panel {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Formulários */
+.financial-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label { font-size: 0.9rem; font-weight: 600; }
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus { border-color: #2563eb; }
+
+button[type="submit"] {
+    background-color: #2563eb !important;
+    color: white !important;
+    font-weight: 600;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 1rem;
+}

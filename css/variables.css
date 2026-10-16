@@ -1,0 +1,13 @@
+:root {
+    --bg-primary: #f8fafc;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --color-primary: #2563eb;
+    --color-success: #16a34a;
+    --color-danger: #dc2626;
+    --radius-md: 6px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+}
